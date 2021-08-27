@@ -16,7 +16,7 @@ fi
 
 hub_id_ok()
 {
-	if [[ $1 =~ ^[0-9.-]+$ ]] && [[ ! -z $($uhubctl | grep "hub $1 \[2109:0817") ]]; then
+	if [[ $1 =~ ^[0-9.-]+$ ]] && [[ ! -z $($uhubctl | grep "hub $1 \[2109:2817") ]]; then
     return 0
   else
     return 1
